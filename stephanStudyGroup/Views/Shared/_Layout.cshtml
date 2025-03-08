@@ -26,7 +26,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="tableView">tableView</a>
+                            <!--<a class="nav-link text-dark" asp-area="" asp-controller="People" asp-action="tableView">tableView</a>-->
+                            <form action="~/People/Dropdown" method="get">
+                                <fieldset>List of People</fieldset>
+                                <select id="person" name="person" onchange="this.form.submit()">
+                                    <option value="" disabled selected>--Select an Option--</option>
+                                    <option value="tableView">Complete List Of People</option>
+                                    <option value="~/HTML/Person1.html">Person1</option>
+                                    <option value="~/HTML/Person2.html">Person2</option>
+                                    <option value="~/HTML/Person3.html">Person3</option>
+                                    <option value="~/HTML/Person4.html">Person4</option>
+                                    <option value="~/HTML/Person5.html">Person5</option>
+                                </select>
+                            </form>
                         </li>
                     </ul>
                 </div>

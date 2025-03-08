@@ -11,6 +11,7 @@
         <th>@Html.DisplayNameFor(model => model.FirstName)</th>
         <th>@Html.DisplayNameFor(model => model.Surname)</th>
         <th>@Html.DisplayNameFor(model => model.EmailAddress)</th>
+        <th>@Html.DisplayNameFor(model => model.myLink)</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -19,6 +20,7 @@
             <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
             <td>@Html.DisplayFor(modelItem => item.Surname)</td>
             <td>@Html.DisplayFor(modelItem => item.EmailAddress)</td>
+            <td><a asp-controller="People" asp-action="renderStatic" asp-route-filePath="@item.myLink"><button>LINK</button></a></td>
         </tr>
     }
 </table>

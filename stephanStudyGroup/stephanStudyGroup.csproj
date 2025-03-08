@@ -6,4 +6,24 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\HTML\Images\Anthony-Mackie-Captain-America-4.webp" />
+    <None Include="wwwroot\HTML\Images\antman-and-the-wasp-marvel-4.webp" />
+    <None Include="wwwroot\HTML\Images\black-widow-1.webp" />
+    <None Include="wwwroot\HTML\Images\Don-cheadle-as-rhodey-Cropped.webp" />
+    <None Include="wwwroot\HTML\Images\hawkeye.webp" />
+    <None Include="wwwroot\HTML\Images\peter-parker-Cropped.webp" />
+    <None Include="wwwroot\HTML\Images\steve-rogers.webp" />
+    <None Include="wwwroot\HTML\Images\The-Incredible-Hulk.webp" />
+    <None Include="wwwroot\HTML\Images\thor-lightning.webp" />
+    <None Include="wwwroot\HTML\Images\tony-stark-iron-man.webp" />
+    <None Include="wwwroot\HTML\Images\Vision-Civil-War-Cropped.webp" />
+    <None Include="wwwroot\HTML\Images\Wanda-Scarlet-Witch-Cropped.webp" />
+    <None Include="wwwroot\HTML\Person1.html" />
+    <None Include="wwwroot\HTML\Person2.html" />
+    <None Include="wwwroot\HTML\Person3.html" />
+    <None Include="wwwroot\HTML\Person4.html" />
+    <None Include="wwwroot\HTML\Person5.html" />
+  </ItemGroup>
+
 </Project>
