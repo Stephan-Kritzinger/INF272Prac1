@@ -5,13 +5,29 @@
 @{
     ViewBag.Title = "List of People";
 }
-<table class="table">
+<script>
+    function deleteRow(button){
+        button.parentElement.parentElement.remove();
+    }
+
+    document.addEventListener('DOMContentLoaded', function changeRed(){
+        var rows = document.getElementsByTagName("tr");
+        for(var i = 0; i < rows.length; i++){
+            console.log(rows[i].children[1].innerHTML);
+            if(rows[i].children[1].innerHTML.charAt(0).toLowerCase() == 's'){
+                rows[i].setAttribute("style", "color: red");
+            }
+        }
+    }, false);
+</script>
+<table class="table" onload="changeRed()">
     <tr>
         <th>@Html.DisplayNameFor(model => model.StudentNumber)</th>
         <th>@Html.DisplayNameFor(model => model.FirstName)</th>
         <th>@Html.DisplayNameFor(model => model.Surname)</th>
         <th>@Html.DisplayNameFor(model => model.EmailAddress)</th>
         <th>@Html.DisplayNameFor(model => model.myLink)</th>
+        <th>Delete</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -21,6 +37,7 @@
             <td>@Html.DisplayFor(modelItem => item.Surname)</td>
             <td>@Html.DisplayFor(modelItem => item.EmailAddress)</td>
             <td><a asp-controller="People" asp-action="renderStatic" asp-route-filePath="@item.myLink"><button>LINK</button></a></td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
         </tr>
     }
 </table>

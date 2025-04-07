@@ -21,9 +21,6 @@
 li.lastElement{
     border-right: none;
 }
-.active{
-    background-color: darkgreen;
-}
 ul{
     list-style-type: none;
 }
@@ -32,9 +29,6 @@ ul{
     border: 3px solid green;
     margin: 10px;
     background-color: white
-}
-.section-body{
-    display:flex;
 }
 
 body{
@@ -57,7 +51,13 @@ body{
 }
 .section-body p{
     font-weight: bold;
+    float: none;
 }
 .section-body div{
     margin: 20px;
+}
+.section-body img{
+    float:left;
+    margin-right: 10px;
+    width: 200px;
 }
